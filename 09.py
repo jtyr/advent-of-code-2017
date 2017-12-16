@@ -34,7 +34,8 @@ Here are some self-contained pieces of garbage:
 - <random characters>, garbage containing random characters.
 - <<<<>, because the extra < are ignored.
 - <{!>}>, because the first > is canceled.
-- <!!>, because the second ! is canceled, allowing the > to terminate the garbage.
+- <!!>, because the second ! is canceled, allowing the > to terminate the
+  garbage.
 - <!!!>>, because the second ! and the first > are canceled.
 - <{o"i!a,<{i<a>, which ends at the first >.
 

@@ -55,7 +55,6 @@ def get_data(name):
     return f.readlines()
 
 
-
 def main():
     if len(sys.argv) < 2:
         print("Usage: %s <input_file>" % sys.argv[0])
@@ -70,9 +69,8 @@ def main():
 
     # Parse data and initiate registers
     for line in data:
-        line = line.rstrip()
-
-        inc_reg, inc_instr, inc_val, _, cond_reg, cond_op, cond_val = line.split(' ')
+        parts = line.rstrip().split(' ')
+        inc_reg, inc_instr, inc_val, _, cond_reg, cond_op, cond_val = parts
 
         if inc_reg not in reg:
             reg[inc_reg] = 0
